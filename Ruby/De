@@ -1,0 +1,20 @@
+#quantity(5,6,2,3,4,1)
+#elements(1,2,3,4,5,6)
+#index(0,1,2,3,4,5,6)
+
+for i in 0..5 do 
+ case i 
+   when 0 
+     @browser.text_field(:index => i).set 5
+   when 1
+     @browser.text_field(:index => i).set 6
+   when 2
+     @browser.text_field(:index => i).set 2
+   when 3
+  @browser.text_field(:index => i).set 3
+when 4
+@browser.text_field(:index => i).set 4
+when 6 
+@browser.text_field(:index => i).set 1
+end 
+end
